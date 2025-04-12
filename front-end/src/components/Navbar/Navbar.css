@@ -1,0 +1,97 @@
+:root {
+    --color-primario: #6f4e37;
+    --color-secundario: #d9a066;
+    --color-acento: #a3c9a8;
+    --color-fondo: #f5f2eb;
+    --color-texto: #3b3b3b;
+  }
+  
+  .navbar {
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 40px;
+  }
+  
+  /* Fila superior con grid */
+  .navbar-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  /* IZQUIERDA - logo */
+  .navbar-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .logo-img {
+    width: 190px; 
+    height: auto;
+    object-fit: contain;
+  }
+  
+  
+  /* CENTRO - título */
+  .navbar-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-primario);
+    font-family: 'Georgia', serif;
+  }
+  
+  /* DERECHA - iconos y botón */
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .navbar-search-icon{
+   position: relative;
+  }
+  .navbar-search-icon .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-primario);
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+}
+  .navbar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .navbar button:hover {
+    background-color: var(--color-secundario);
+  }
+
+  /* Fila inferior - menú */
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+  }
+  .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--color-primario);
+    font-weight: bold;
+    color: var(--color-primario);
+  }
+  .navbar li{
+    cursor: pointer;
+  }
