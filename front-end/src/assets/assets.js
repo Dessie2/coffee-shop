@@ -11,7 +11,7 @@ import menu_12121 from './menu_12121.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 
-import food_1 from './expreso_1.png'
+import expreso_1 from './expreso_1.png'
 import food_2 from './food_2.png'
 import food_3 from './food_3.png'
 import food_4 from './food_4.png'
@@ -117,10 +117,179 @@ export const menu_list = [
     }]
 
 export const food_list = [
+      // Coffee Items
     {
         _id: "1",
+        name: "Espresso",
+        image: expreso_1,
+        price: 3.50,
+        description: "Intense and aromatic, our premium espresso made with selected beans",
+        category: "Coffee"
+      },
+      {
+        _id: "2",
+        name: "Cappuccino",
+        image: food_22,
+        price: 4.50,
+        description: "Perfect combination of espresso, steamed milk and creamy foam",
+        category: "Coffee"
+      },
+      {
+        _id: "3",
+        name: "Latte Art",
+        image: food_23,
+        price: 5.00,
+        description: "Smooth espresso with steamed milk and beautiful latte art",
+        category: "Coffee"
+      },
+      {
+        _id: "4",
+        name: "Cold Brew",
+        image: food_24,
+        price: 4.80,
+        description: "Cold-steeped for 12 hours for a smooth, less acidic flavor",
+        category: "Coffee"
+      },
+    
+      // Desserts
+      {
+        _id: "10",
+        name: "Fruit Ice Cream",
+        image: food_10,
+        price: 5.50,
+        description: "Creamy ice cream with fresh fruit toppings",
+        category: "Desserts"
+      },
+      {
+        _id: "11",
+        name: "Jar Ice Cream",
+        image: food_11,
+        price: 6.00,
+        description: "Artisanal ice cream served in cute mason jars",
+        category: "Desserts"
+      },
+      {
+        _id: "12",
+        name: "Vanilla Ice Cream",
+        image: food_12,
+        price: 4.50,
+        description: "Classic vanilla bean ice cream with rich flavor",
+        category: "Desserts"
+      },
+      {
+        _id: "9",
+        name: "Ripple Ice Cream",
+        image: food_9,
+        price: 5.50,
+        description: "Swirled ice cream with fruit or chocolate ripples",
+        category: "Desserts"
+      },
+    
+      // Rolls
+      {
+        _id: "5",
+        name: "Lasagna Rolls",
+        image: food_5,
+        price: 8.50,
+        description: "Italian-inspired lasagna rolled with cheese and herbs",
+        category: "Rolls"
+      },
+      {
+        _id: "6",
+        name: "Peri Peri Rolls",
+        image: food_6,
+        price: 7.50,
+        description: "Spicy peri peri chicken in warm flatbread",
+        category: "Rolls"
+      },
+      {
+        _id: "7",
+        name: "Chicken Rolls",
+        image: food_7,
+        price: 8.00,
+        description: "Tender chicken with vegetables in soft wrap",
+        category: "Rolls"
+      },
+      {
+        _id: "8",
+        name: "Veg Rolls",
+        image: food_8,
+        price: 6.50,
+        description: "Fresh vegetables and hummus in whole wheat wrap",
+        category: "Rolls"
+      },
+    
+      // Sandwiches
+      {
+        _id: "13",
+        name: "Chicken Sandwich",
+        image: food_13,
+        price: 9.00,
+        description: "Grilled chicken with lettuce and special sauce",
+        category: "Sandwich"
+      },
+      {
+        _id: "14",
+        name: "Vegan Sandwich",
+        image: food_14,
+        price: 8.50,
+        description: "Plant-based patty with vegan mayo and veggies",
+        category: "Sandwich"
+      },
+      {
+        _id: "15",
+        name: "Grilled Sandwich",
+        image: food_15,
+        price: 7.50,
+        description: "Toasted sandwich with melted cheese and vegetables",
+        category: "Sandwich"
+      },
+      {
+        _id: "16",
+        name: "Bread Sandwich",
+        image: food_16,
+        price: 6.00,
+        description: "Classic sandwich with your choice of fillings",
+        category: "Sandwich"
+      },
+      // Cakes
+      {
+        _id: "17",
+        name: "Cup Cake",
+        image: food_17,
+        price: 4.00,
+        description: "Moist cupcakes with buttercream frosting",
+        category: "Cake"
+      },
+      {
+        _id: "18",
+        name: "Vegan Cake",
+        image: food_18,
+        price: 5.00,
+        description: "Delicious plant-based cake with dairy-free icing",
+        category: "Cake"
+      },
+      {
+        _id: "19",
+        name: "Butterscotch Cake",
+        image: food_19,
+        price: 6.00,
+        description: "Rich butterscotch flavor with caramel drizzle",
+        category: "Cake"
+      },
+      {
+        _id: "20",
+        name: "Sliced Cake",
+        image: food_20,
+        price: 5.50,
+        description: "Assorted cake slices perfect for individual servings",
+        category: "Cake"
+      },
+      //salad
+      {
+        _id: "1",
         name: "Greek salad",
-        image: food_1,
+        image: expreso_1,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -146,205 +315,71 @@ export const food_list = [
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
-    }, {
-        _id: "5",
-        name: "Lasagna Rolls",
-        image: food_5,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
-        _id: "6",
-        name: "Peri Peri Rolls",
-        image: food_6,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
-        _id: "7",
-        name: "Chicken Rolls",
-        image: food_7,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
-        _id: "8",
-        name: "Veg Rolls",
-        image: food_8,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
-        _id: "9",
-        name: "Ripple Ice Cream",
-        image: food_9,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
-        _id: "10",
-        name: "Fruit Ice Cream",
-        image: food_10,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
-        _id: "11",
-        name: "Jar Ice Cream",
-        image: food_11,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
-        _id: "12",
-        name: "Vanilla Ice Cream",
-        image: food_12,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
     },
-    {
-        _id: "13",
-        name: "Chicken Sandwich",
-        image: food_13,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    },
-    {
-        _id: "14",
-        name: "Vegan Sandwich",
-        image: food_14,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
-        _id: "15",
-        name: "Grilled Sandwich",
-        image: food_15,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
-        _id: "16",
-        name: "Bread Sandwich",
-        image: food_16,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
-        _id: "17",
-        name: "Cup Cake",
-        image: food_17,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
-        _id: "18",
-        name: "Vegan Cake",
-        image: food_18,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
-        _id: "19",
-        name: "Butterscotch Cake",
-        image: food_19,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
-        _id: "20",
-        name: "Sliced Cake",
-        image: food_20,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
-        _id: "21",
-        name: "Garlic Mushroom ",
-        image: food_21,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
-        _id: "22",
-        name: "Fried Cauliflower",
-        image: food_22,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
-        _id: "23",
-        name: "Mix Veg Pulao",
-        image: food_23,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
-        _id: "24",
-        name: "Rice Zucchini",
-        image: food_24,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    },
-    {
+      // Pastas
+      {
         _id: "25",
         name: "Cheese Pasta",
         image: food_25,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 10.50,
+        description: "Creamy cheese sauce with al dente pasta",
         category: "Pasta"
-    },
-    {
+      },
+      {
         _id: "26",
         name: "Tomato Pasta",
         image: food_26,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 9.50,
+        description: "Classic marinara sauce with fresh basil",
         category: "Pasta"
-    }, {
+      },
+      {
         _id: "27",
         name: "Creamy Pasta",
         image: food_27,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 11.00,
+        description: "Rich cream sauce with mushrooms and herbs",
         category: "Pasta"
-    }, {
+      },
+      {
         _id: "28",
         name: "Chicken Pasta",
         image: food_28,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 12.00,
+        description: "Grilled chicken strips with penne in white wine sauce",
         category: "Pasta"
-    }, {
+      },
+      // Noodles
+      {
         _id: "29",
-        name: "Buttter Noodles",
+        name: "Butter Noodles",
         image: food_29,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 9.00,
+        description: "Simple buttery noodles with parmesan cheese",
         category: "Noodles"
-    }, {
+      },
+      {
         _id: "30",
         name: "Veg Noodles",
         image: food_30,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 8.50,
+        description: "Stir-fried vegetables with egg noodles",
         category: "Noodles"
-    }, {
+      },
+      {
         _id: "31",
         name: "Somen Noodles",
         image: food_31,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 10.00,
+        description: "Japanese cold noodles with dipping sauce",
         category: "Noodles"
-    }, {
+      },
+      {
         _id: "32",
         name: "Cooked Noodles",
         image: food_32,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
+        price: 8.00,
+        description: "Traditional noodles with your choice of broth",
         category: "Noodles"
-    }
-]
+      }
+    ]
