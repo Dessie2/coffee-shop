@@ -1,0 +1,85 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    max-width: 100%; /* Asegura que no desborde */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Contenedor del slider (ajustado para espacio de flechas) */
+.explore-menu-list-container {
+    position: relative;
+    width: calc(100% - 80px); /* Resta el espacio de las flechas */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.explore-menu-list {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+}
+
+/* Flechas POSICIONADAS FUERA */
+.menu-arrow {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    font-size: 1.2rem;
+    color: #262626;
+    /* Posición ajustada */
+    margin: 0 -30px; /* Mitad fuera del contenedor */
+}
+
+.menu-arrow.left {
+    left: 0;
+}
+
+.menu-arrow.right {
+    right: 0;
+}
+
+/* Resto de estilos (se mantienen igual) */
+.explore-menu-list-item {
+    flex: 0 0 auto;
+    width: 170px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.explore-menu-list img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: #2e2d2d;
+    font-size: max(1.0vw, 16px);
+    cursor: pointer;
+}
+.explore-menu hr{
+    margin: 10px 0 px;
+    height: 2px;
+    background-color: #e2e2e2;
+    bortder: none;
+}

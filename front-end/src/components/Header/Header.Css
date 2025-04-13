@@ -1,7 +1,64 @@
-.header{
-    height: 200px;
-    margin: 30px auto;
+:root {
+    --color-primario: #6f4e37;
+    --color-secundario: #d9a066;
+    --color-acento: #a3c9a8;
+    --color-fondo: #f5f2eb;
+    --color-texto: #3b3b3b;
+}
+
+.header {
+    height: 35vw; 
+    margin: 40px auto;
     background: url('./header_img.png') no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    background-position: center; 
     position: relative;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1.1); /* Sutil sombra */
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.8vw; 
+    max-width: 50%;
+    bottom: 10%; 
+    left: 6vw;
+    animation: fadeIn 3s;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 2.5); /* Mejora legibilidad */
+}
+
+.header-contents h2 {
+    font-size: max(3vw, 24px); /* Más grande y jerárquico */
+    font-weight: 600; /* Más negrita */
+    color: white;
+    margin-bottom: 0.5vw; /* Espaciado controlado */
+    line-height: 1.2; /* Mejor interlineado */
+}
+
+.header-contents p {
+    font-size: max(1.5vw, 16px); /* Tamaño ajustado */
+    font-weight: 400;
+    color: white;
+    line-height: 1.5; /* Más legible */
+    margin-bottom: 1vw;
+}
+
+.header-contents button {
+    border: none;
+    color: var(--color-fondo);
+    font-weight: 600; /* Más negrita */
+    padding: 1.2vw 2.2vw; /* Más ancho */
+    background-color: var(--color-primario);
+    font-size: max(1.1vw, 14px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Efecto hover suave */
+}
+
+.header-contents button:hover {
+    background-color: var(--color-secundario); /* Color interactivo */
+    transform: scale(1.02); /* Sutil zoom */
 }

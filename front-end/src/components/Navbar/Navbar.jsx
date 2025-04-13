@@ -28,7 +28,7 @@ const Navbar = () => {
         <li onClick = {()=>setMenu("home")} className={menu==="home"?"active":" "}>Home</li>
         <li onClick = {()=>setMenu("menu")} className={menu==="menu"?"active":" "}>Menu</li>
         <li onClick = {()=>setMenu("contac")} className={menu==="contac"?"active":" "}>Contact</li>
-        <li onClick = {()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":" "}>Mobile App</li>
+        <li onClick = {()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":" "}>Mobil-App</li>
       </ul>
     </div>
   )
