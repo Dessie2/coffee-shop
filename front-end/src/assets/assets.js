@@ -12,9 +12,9 @@ import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 
 import expreso_1 from './expreso_1.png'
-import food_2 from './food_2.png'
-import food_3 from './food_3.png'
-import food_4 from './food_4.png'
+import capp_2 from './capp_2.png'
+import lat_3 from './lat_3.png'
+import cold_4 from './cold_4.png'
 import food_5 from './food_5.png'
 import food_6 from './food_6.png'
 import food_7 from './food_7.png'
@@ -31,10 +31,10 @@ import food_17 from './food_17.png'
 import food_18 from './food_18.png'
 import food_19 from './food_19.png'
 import food_20 from './food_20.png'
-import food_21 from './food_21.png'
-import food_22 from './food_22.png'
-import food_23 from './food_23.png'
-import food_24 from './food_24.png'
+import food_1 from './food_1.png'
+import food_2 from './food_2.png'
+import food_3 from './food_3.png'
+import food_4 from './food_4.png'
 import food_25 from './food_25.png'
 import food_26 from './food_26.png'
 import food_27 from './food_27.png'
@@ -129,7 +129,7 @@ export const food_list = [
       {
         _id: "2",
         name: "Cappuccino",
-        image: food_22,
+        image: capp_2,
         price: 4.50,
         description: "Perfect combination of espresso, steamed milk and creamy foam",
         category: "Coffee"
@@ -137,7 +137,7 @@ export const food_list = [
       {
         _id: "3",
         name: "Latte Art",
-        image: food_23,
+        image: lat_3,
         price: 5.00,
         description: "Smooth espresso with steamed milk and beautiful latte art",
         category: "Coffee"
@@ -145,7 +145,7 @@ export const food_list = [
       {
         _id: "4",
         name: "Cold Brew",
-        image: food_24,
+        image: cold_4,
         price: 4.80,
         description: "Cold-steeped for 12 hours for a smooth, less acidic flavor",
         category: "Coffee"
@@ -289,7 +289,7 @@ export const food_list = [
       {
         _id: "1",
         name: "Greek salad",
-        image: expreso_1,
+        image: food_1,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
