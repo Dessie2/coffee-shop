@@ -2,7 +2,7 @@
     --color-primario: #6f4e37;
     --color-secundario: #d9a066;
     --color-acento: #a3c9a8;
-    --color-fondo: #f5f2eb;
+    --color-fondo: #cac6bc;
     --color-texto: #3b3b3b;
   }
   
@@ -27,7 +27,7 @@
   }
   
   .logo-img {
-    width: 190px; 
+    width: 150px; 
     height: auto;
     object-fit: contain;
   }

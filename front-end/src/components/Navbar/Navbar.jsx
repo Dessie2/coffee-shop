@@ -10,10 +10,10 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-top">
         <div className="navbar-left">
-          <img src={assets.logo} alt="Logo" className="logo-img" />
+          <img src="/logo_cafes.png" alt="Logo" className="logo-img" />
         </div>
 
-        <div className="navbar-title">Café Aroma</div>
+        <div className="navbar-title">Brew & Bloom</div>
 
         <div className="navbar-right">
           <img src={assets.search_icon} alt="Search" />
