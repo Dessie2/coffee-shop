@@ -1,16 +1,87 @@
 .food-display {
     margin-top: 30px;
+    padding: 0 20px;
 }
 
 .food-display h2 {
-    font-size: max(2vw, 24px);
+    font-size: clamp(24px, 2vw, 32px);
     font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--color-texto);
 }
 
+/* Manteniendo siempre 4 columnas con ajustes responsivos */
 .food-display-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Solo 4 columnas */
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
     gap: 30px;
     row-gap: 50px;
+}
+
+/* Ajustes para pantallas grandes (más de 1600px) */
+@media (min-width: 1600px) {
+    .food-display-list {
+        gap: 40px;
+        row-gap: 60px;
+    }
+}
+
+/* Ajustes para laptops medianas */
+@media (max-width: 1200px) {
+    .food-display-list {
+        gap: 25px;
+        row-gap: 40px;
+    }
+}
+
+/* Ajustes para tablets grandes */
+@media (max-width: 992px) {
+    .food-display-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        row-gap: 35px;
+    }
+}
+
+/* Tablets pequeñas */
+@media (max-width: 768px) {
+    .food-display {
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+    
+    .food-display-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+        gap: 25px;
+        row-gap: 40px;
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 576px) {
+    .food-display {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    
+    .food-display h2 {
+        font-size: 22px;
+    }
+    
+    .food-display-list {
+        grid-template-columns: repeat(2, 1fr); /* Mantiene 2 columnas */
+        gap: 15px;
+        row-gap: 30px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+    .food-display-list {
+        grid-template-columns: 1fr; /* 1 columna en móviles muy pequeños */
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
