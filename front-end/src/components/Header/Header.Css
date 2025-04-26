@@ -26,7 +26,7 @@
     max-width: 50%;
     bottom: 10%; 
     left: 6vw;
-    animation: fadeIn 3s;
+    animation: fadeIn 1.5s;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 2.5); /* Mejora legibilidad */
 }
 

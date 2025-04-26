@@ -33,7 +33,7 @@ return (
                     </div>
             </div>
             <hr />
-            <p className="footer-copyright">copyright 2025 © Café Aroma. All rights reserved.</p>
+            <p className="footer-copyright">copyright 2025 © Brew & Bloom. All rights reserved.</p>
     </div>
 )
 }

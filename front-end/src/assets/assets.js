@@ -119,7 +119,7 @@ export const menu_list = [
 export const food_list = [
       // Coffee Items
     {
-        _id: "1",
+        _id: "111",
         name: "Espresso",
         image: expreso_1,
         price: 3.50,
@@ -127,7 +127,7 @@ export const food_list = [
         category: "Coffee"
       },
       {
-        _id: "2",
+        _id: "222",
         name: "Cappuccino",
         image: capp_2,
         price: 4.50,
@@ -135,7 +135,7 @@ export const food_list = [
         category: "Coffee"
       },
       {
-        _id: "3",
+        _id: "333",
         name: "Latte Art",
         image: lat_3,
         price: 5.00,
@@ -143,7 +143,7 @@ export const food_list = [
         category: "Coffee"
       },
       {
-        _id: "4",
+        _id: "444",
         name: "Cold Brew",
         image: cold_4,
         price: 4.80,
