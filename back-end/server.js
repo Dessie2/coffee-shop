@@ -15,7 +15,7 @@ app.use(cors());
 connectDB();
 
 // API endpoints
-app.use("/api/food", foodRouter);
+app.use("/api/food",foodRouter);
 
 // test route
 app.get("/", (req, res) => {
