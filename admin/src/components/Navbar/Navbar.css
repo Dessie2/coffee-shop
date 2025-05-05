@@ -1,0 +1,36 @@
+:root {
+    --color-primario: #6f4e37;
+    --color-secundario: #d9a066;
+    --color-acento: #a3c9a8;
+    --color-fondo: #f3f1eb;
+    --color-texto: #3b3b3b;
+  }
+  .navbar {
+    display: flex;
+    background-color: var(--color-fondo);
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+}
+
+.logo {
+    width: max(7%, 80px);
+}
+
+.name {
+    font-size: 1rem;
+    color: var(--color-primario);
+    font-weight: 600;
+    margin: 0;
+    margin-top: 8px;
+    text-align: left;
+}
+.navbar .profile {
+    width: 50px;
+}
