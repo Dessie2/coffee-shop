@@ -22,6 +22,10 @@
     border-radius: 3px 0px 0px 3px;
     cursor: pointer;
 }
+.sidebar-option.active{
+    background-color: #fff0ed;
+    border-color: #6f4e37;
+}
 
 @media (max-width:900px) {
     .sidebar{
