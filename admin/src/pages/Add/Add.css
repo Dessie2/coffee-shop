@@ -1,0 +1,25 @@
+:root {
+    --color-primario: #6f4e37;
+    --color-secundario: #d9a066;
+    --color-fondo: #f3f1eb;
+    --color-texto: #3b3b3b;
+  }
+.add{
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+.add from{
+    gap:20px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-img-upload{
+    width: 20px
+}

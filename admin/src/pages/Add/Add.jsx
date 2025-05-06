@@ -8,7 +8,7 @@ const Add = () => {
         <div className="add-img-upload flex-col">
          <p>Upload Image</p>
          <label htmlFor="image">
-          <image src={assets.upload_area} alt=" " />
+          <img src={assets.upload_area} alt=" " />
          </label>
          <input type="file" id='image' hidden required/>
         </div>
@@ -34,7 +34,13 @@ const Add = () => {
               <option value="Noodles">Noodles</option>
             </select>
           </div>
+          <div className="add-price flex-col">
+            <p>Product price</p>
+            <input type="number" name='price' placeholder='$20'/>
+
+          </div>
         </div>
+        <button type='submit' className='add-btn'>ADD</button>
       </form>
       
     </div>
