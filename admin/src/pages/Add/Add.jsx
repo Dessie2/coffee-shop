@@ -1,30 +1,83 @@
-import React from 'react'
-import './Add.css'
-import { assets } from '../../assets/assets'
+import React, { useState, useEffect } from 'react';
+import './Add.css';
+import { assets } from '../../assets/assets';
+
 const Add = () => {
+  const [image, setImage] = useState(false);
+  const [data, setData] = useState({
+    name: "",
+    description: "",
+    category: "salad",
+    price: "",
+  });
+
+  const onChangeHandler = (event) => {
+    const { name, value } = event.target;
+    setData(data => ({ ...data, [name]: value }));
+  };
+
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
+
   return (
     <div className='add'>
       <form className='flex-col'>
+        {/* Upload Image */}
         <div className="add-img-upload flex-col">
-         <p>Upload Image</p>
-         <label htmlFor="image">
-          <img src={assets.upload_area} alt=" " />
-         </label>
-         <input type="file" id='image' hidden required/>
+          <p>Upload Image</p>
+          <label htmlFor="image">
+            <img
+              src={image ? URL.createObjectURL(image) : assets.upload_area}
+              alt="Upload Preview"
+            />
+          </label>
+          <input
+            type="file"
+            id="image"
+            hidden
+            required
+            onChange={(e) => setImage(e.target.files[0])}
+          />
         </div>
+
+        {/* Product Name */}
         <div className='add-product-name flex-col'>
           <p>Product name</p>
-          <input type="text" name='name' placeholder='Type here'/>
+          <input
+            type="text"
+            name='name'
+            value={data.name}
+            onChange={onChangeHandler}
+            placeholder='Type here'
+            required
+          />
         </div>
+
+        {/* Product Description */}
         <div className="add-product-description flex-col"> 
-         <p>Product description</p>
-         <textarea name="description" rows="6" placeholder='Write content here' required/>
+          <p>Product description</p>
+          <textarea
+            name="description"
+            rows="6"
+            placeholder='Write content here'
+            value={data.description}
+            onChange={onChangeHandler}
+            required
+          />
         </div>
+
+        {/* Category and Price */}
         <div className="add-category-price">
           <div className="add-category flex-col">
             <p>Product category</p>
-            <select name='category'>
-              <option value="coffee">coffee</option>
+            <select
+              name='category'
+              value={data.category}
+              onChange={onChangeHandler}
+              required
+            >
+              <option value="coffee">Coffee</option>
               <option value="Rolls">Rolls</option>
               <option value="Desserts">Desserts</option>
               <option value="Sandwich">Sandwich</option>
@@ -34,17 +87,25 @@ const Add = () => {
               <option value="Noodles">Noodles</option>
             </select>
           </div>
+
           <div className="add-price flex-col">
             <p>Product price</p>
-            <input type="number" name='price' placeholder='$20'/>
-
+            <input
+              type="number"
+              name='price'
+              value={data.price}
+              onChange={onChangeHandler}
+              placeholder='$20'
+              required
+            />
           </div>
         </div>
+
+        {/* Submit Button */}
         <button type='submit' className='add-btn'>ADD</button>
       </form>
-      
     </div>
-  )
-}
+  );
+};
 
-export default Add
+export default Add;
