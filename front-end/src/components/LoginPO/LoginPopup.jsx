@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React, { useState } from 'react'
 import './LoginPopup.css'
 import { assets } from '../../assets/assets'
 
@@ -16,14 +16,9 @@ const LoginPopup = ({setShowLogin}) => {
     const value = event.target.value
     setData(data =>({...data, [name]: value}))
   }
-
-  useEffect(() => {
-    console.log(data);
-  }, [data])
-
   return (
     <div className='login-popup'>
-     <from className="login-popup-container">
+     <form className="login-popup-container">
       <div className="login-popup-title">
         <h2>{currState}</h2>
         <img onClick={()=>setShowLogin(false)} src={assets.cross_icon} alt="" />
@@ -33,16 +28,16 @@ const LoginPopup = ({setShowLogin}) => {
         <input name='email' onChange={onChangeHandler} value={data.email} type="email" placeholder='Your email' required />
         <input name='password' onChange={onChangeHandler} value={data.password} type="password" placeholder='password' required />
       </div>
-      <button>{currState=="Sing up"?"Create account":"Log in"}</button>
+      <button>{currState=="Sign up"?"Create account":"Log in"}</button>
       <div className="login-popup-condition">
         <input type="checkbox" required/>
         <p>By continuing, i agree to the terms of use & privacy policy</p>
       </div>
       {currState==="Log in"
-      ?<p>Create a new account? <span onClick={()=>setCurrState("Sing Up")}>Click here</span></p>
+      ?<p>Create a new account? <span onClick={()=>setCurrState("Sign Up")}>Click here</span></p>
       : <p>Already have an account? <span onClick={()=>setCurrState("Log in")}>Login here</span></p>
     }
-     </from>
+     </form>
     </div>
   )
 }
