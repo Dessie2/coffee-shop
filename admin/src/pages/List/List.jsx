@@ -30,10 +30,11 @@ const List = ({url}) => {
       toast.error("Error");
     }
   }
+   useEffect(() => {
+  console.log("URL del backend:", url);
+  fetchList();
+}, []);
 
-  useEffect(() => {
-    fetchList();
-  }, []);
 
   return (
     <div className='list add flex-col'>

@@ -9,7 +9,7 @@ const Add = ({url}) => {
   const [data, setData] = useState({
     name: "",
     description: "",
-    category: "salad",
+    category: "Salad",
     price: "",
   });
 
@@ -33,7 +33,7 @@ const Add = ({url}) => {
       setData({
         name: "",
         description: "",
-        category: "salad",
+        category: "Salad",
         price: "",
       })
       setImage(false);
