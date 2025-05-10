@@ -46,9 +46,12 @@ const PlaceOrder = () => {
     };
 
     try {
-      const response = await axios.post(`${url}/api/order/place`, orderData, {
-  
+     const response = await axios.post(`${url}/api/order/place`, orderData, {
+  headers: {
+    token: token
+  }
 });
+
 console.log("Token que se envía:", token);
 
 
