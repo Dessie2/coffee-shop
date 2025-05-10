@@ -147,7 +147,7 @@ export const food_list = [
         name: "Cold Brew",
         image: cold_4,
         price: 4.80,
-        description: "Cold-steeped for 12 hours for a smooth, less acidic flavor",
+        description: "Cold-steeped for 12 hours for a smooth, less acidic flavor ",
         category: "Coffee"
       },
     
