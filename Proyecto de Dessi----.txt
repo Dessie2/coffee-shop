@@ -1,0 +1,18 @@
+Proyecto de Dessi----
+
+para ejecutar Backend
+npm run server
+
+para ejecutar frontend
+npm run dev
+
+para ejecutar admin
+npm rub dev 
+
+para ver le error usando react se puede ejecutar este comando 
+
+node (arcivo donde da error).js
+
+ejemplo: node server.js
+
+

@@ -9,7 +9,7 @@ const Add = ({url}) => {
   const [data, setData] = useState({
     name: "",
     description: "",
-    category: "Salad",
+    category: "Coffee",
     price: "",
   });
 
@@ -33,7 +33,7 @@ const Add = ({url}) => {
       setData({
         name: "",
         description: "",
-        category: "Salad",
+        category: "Coffee",
         price: "",
       })
       setImage(false);
@@ -102,7 +102,7 @@ const Add = ({url}) => {
               onChange={onChangeHandler}
               required
             >
-              <option value="coffee">Coffee</option>
+              <option value="Coffee">Coffee</option>
               <option value="Rolls">Rolls</option>
               <option value="Desserts">Desserts</option>
               <option value="Sandwich">Sandwich</option>

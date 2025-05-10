@@ -7,6 +7,7 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import { Footer } from './components/Footer/Footer';
 import LoginPopup from './components/LoginPO/LoginPopup';
 
+
 const App = () => {
   const [showLogin, setShowLogin] = React.useState(false);
 
