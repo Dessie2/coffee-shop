@@ -9,10 +9,40 @@ npm run dev
 para ejecutar admin
 npm rub dev 
 
-para ver le error usando react se puede ejecutar este comando 
+--------------------------------------------------------------------------------
+
+para ver el error usando react y no te meustre el error y solo te salga "crashed....."  se puede ejecutar este comando
 
 node (arcivo donde da error).js
 
 ejemplo: node server.js
+
+------------------------------------------------------------------------
+La diferencia entre "=" y "+=" es que "=" asigna un valor directamente a una variable,
+mientras que "+=" suma un valor a la variable existente y luego asigna el resultado a la misma variable.
+Por ejemplo:
+x = 5; // Asigna el valor 5 a x
+x += 3; // Suma 3 al valor actual de x (5) y asigna el resultado (8) a x
+El operador "-=" en JavaScript (y en otros lenguajes de programación) se utiliza para restar un valor a una variable existente
+y luego asignar el resultado a esa misma variable. Es una forma abreviada de escribir la operación de resta y asignación.
+-----------------------------------------------------------------------------
+El operador `!` en una condición de `if` en JavaScript (y en muchos otros lenguajes)
+ se llama **operador de negación lógica** o **NOT lógico**. Su propósito es invertir el valor booleano de una expresión.
+- Si la expresión es `true`, el operador `!` la convierte en `false`.
+- Si la expresión es `false`, el operador `!` la convierte en `true`.
+ejemplo:
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+    console.log("El usuario no está conectado.");
+}
+- La variable `isLoggedIn` tiene el valor `false`.
+- La condición `!isLoggedIn` evalúa a `true` porque `!` invierte el valor de `false`.
+- Por lo tanto, el bloque dentro del `if` se ejecuta.
+Doble negación (`!!`):
+!! en el código. Esto convierte un valor en su equivalente booleano:
+let value = "texto";
+console.log(!!value); // true (porque "texto" es un valor truthy)
+
 
 
