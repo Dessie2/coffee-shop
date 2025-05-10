@@ -22,7 +22,7 @@ const ExploreMenu = ({ category, setCategory }) => {
             <p className='explore-menu-text'>
                 Discover a variety of freshly brewed coffees, delightful pastries, and savory snacks crafted to satisfy your cravings.
             </p>
-            
+
             <div className="explore-menu-list" ref={menuRef}>
                 {menu_list.map((item, index) => (
                     <div 
