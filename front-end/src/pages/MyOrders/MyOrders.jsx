@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './MyOrders.css'
 import { StoreContext } from '../../context/StoreContext'
 import { assets } from '../../assets/assets';
+import axios from 'axios';
 
 const MyOrders = () => {
 
@@ -11,7 +12,6 @@ const MyOrders = () => {
 
   const fetchOrders = async () => {
      const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});
- 
   }
 
   useEffect(()=>{
