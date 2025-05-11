@@ -7,27 +7,25 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import { Footer } from './components/Footer/Footer';
 import LoginPopup from './components/LoginPO/LoginPopup';
 import MyOrders from './pages/MyOrders/MyOrders';
-//import verify from './pages/verify/verify';
-
+import Verify from './pages/verify/verify';
 
 const App = () => {
   const [showLogin, setShowLogin] = React.useState(false);
 
   return (
     <>
-    {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
-    <div className='App'>
-      <Navbar setShowLogin={setShowLogin}/>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/cart' element={<Cart/>} />
-        <Route path='/order' element={<PlaceOrder/>} />
-        <Route path='/verify' element={<verify/>} />
-        <Route path='/myorders' element={<MyOrders/>}/>
-
-      </Routes>
-    </div>
-    <Footer />
+      {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
+      <div className='App'>
+        <Navbar setShowLogin={setShowLogin} />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/order' element={<PlaceOrder />} />
+          <Route path='/verify' element={<Verify />} />
+          <Route path='/myorders' element={<MyOrders />} />
+        </Routes>
+      </div>
+      <Footer />
     </>
   );
 };
