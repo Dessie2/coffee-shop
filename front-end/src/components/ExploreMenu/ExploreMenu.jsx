@@ -36,10 +36,7 @@ const ExploreMenu = ({ category, setCategory }) => {
                 ))}
             </div>
 
-            {/* Flechas de navegación */}
-            <button className="menu-arrow left" onClick={() => scroll('left')}>❮</button>
-            <button className="menu-arrow right" onClick={() => scroll('right')}>❯</button>
-            <hr />
+           
         </div>
     );
 };

@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 //placing user order for front-end
 const placeOrder = async (req, res) => {
      
-     const frontend_url = "http://localhost:5174"
+     const frontend_url = "http://localhost:5173"
 
     try{
         const newOrder = new orderModel({
@@ -20,25 +20,26 @@ const placeOrder = async (req, res) => {
         await userModel.findByIdAndUpdate(req.body.userId,{cartData:{}})
 
         const line_items = req.body.items.map((item) => ({
-         price_data:{
-           currency:"mxn",
-           product_data:{
-            name:item.name
-           },
-           unit_amount:item.price*100*80
-         },
-          quantity:item.quantity
-        }))
-        line_items.push({
-         price_data: {
-        currency: "mxn",
-         product_data: {
-         name: "Delivery data"
-         },
-            unit_amount: 10000 
-         },
-        quantity: 1
-            });
+  price_data: {
+    currency: "mxn",
+    product_data: {
+      name: item.name
+    },
+    unit_amount: Math.round(item.price * 100)  
+  },
+  quantity: item.quantity
+}));
+
+line_items.push({
+  price_data: {
+    currency: "mxn",
+    product_data: {
+      name: "Delivery fee"
+    },
+    unit_amount: 10000  
+  },
+  quantity: 1
+});
 
 
        const session = await stripe.checkout.sessions.create({
@@ -96,11 +97,11 @@ const listOrders = async (req, res) => {
 //api for updating order status 
 const updateStatus = async (req, res) => {
    try {
-    await orderModel.findByIdAndUpdate(req.body.orderId,{status:req.body.status});
-    req.json({success:true,message:"Status Updated"})
+    await orderModel.findByIdAndUpdate(req.body.orderId, { status: req.body.status });
+    res.json({ success: true, message: "Status Updated" }); 
    } catch (error) {
      console.log(error);
-     res.json({success:false,message:"Error"})
+     res.json({ success: false, message: "Error updating status" });
    }
 }
 

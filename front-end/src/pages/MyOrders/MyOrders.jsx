@@ -15,14 +15,14 @@ const MyOrders = () => {
         {},
         { headers: { token } }
       );
-      console.log("Ordenes:", response.data); // útil para debug
+      console.log("Orders:", response.data);
       if (response.data.success) {
-        setData(response.data.data); // ¡CORRECTO!
+        setData(response.data.data);
       } else {
-        console.error("No se pudieron obtener las órdenes:", response.data.message);
+        console.error("Could not fetch orders:", response.data.message);
       }
     } catch (error) {
-      console.error("Error al obtener órdenes:", error);
+      console.error("Error fetching orders:", error);
     }
   };
 
@@ -32,12 +32,16 @@ const MyOrders = () => {
     }
   }, [token]);
 
+  const handleTrackOrder = (order) => {
+    alert(`Current order status: ${order.status}`);
+  };
+
   return (
     <div className='my-orders'>
-      <h2>MY Orders</h2>
+      <h2>My Orders</h2>
       <div className="container">
         {data.length === 0 ? (
-          <p>No hay órdenes aún.</p>
+          <p>No orders yet.</p>
         ) : (
           data.map((order, index) => (
             <div key={index} className="my-orders-order">
@@ -53,7 +57,7 @@ const MyOrders = () => {
               <p>${order.amount}.00</p>
               <p>Items: {order.items.length}</p>
               <p><span>&#x25cf;</span> <b>{order.status}</b></p>
-              <button onClick={fetchOrders}>Track Order</button>
+              <button onClick={() => handleTrackOrder(order)}>Track Order</button>
             </div>
           ))
         )}
