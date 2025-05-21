@@ -1,0 +1,76 @@
+Proyecto de Dessi----
+
+para ejecutar Backend
+npm run server
+
+para ejecutar frontend
+npm run dev
+
+para ejecutar admin
+npm rub dev 
+
+--------------------------------------------------------------------------------
+
+para ver el error usando react y no te meustre el error y solo te salga "crashed....."  se puede ejecutar este comando
+
+node (arcivo donde da error).js
+
+ejemplo: node server.js
+---------------------------------------------------------------------
+diferentes tipos de medida 
+ fr: Fracción del espacio disponible (usada en CSS Grid)
+ vw: Viewport width: porcentaje del ancho de la ventana del navegador
+ vh: viewport height (1% del alto de la ventana)
+ px: píxeles
+ em, rem: relativas al tamaño de fuente
+
+-----------------------------------------------------------------------
+instalacion de dependecias del backend
+npm init  sirve para inicializar un nuevo proyecto Node.js y crear el archivo package.json.
+
+npm install express mongoose jsonwebtoken bcrypt cors dotenv body-parser multer stripe validator nodemon
+
+| Paquete          | ¿Para qué sirve?                                                                               |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| **express**      | Framework para crear servidores HTTP en Node.js                                                |
+| **mongoose**     | ORM para interactuar con MongoDB                                                               |
+| **jsonwebtoken** | Para crear y verificar tokens JWT (autenticación)                                              |
+| **bcrypt**       | Para encriptar contraseñas                                                                     |
+| **cors**         | Para permitir peticiones desde otros dominios (Cross-Origin)                                   |
+| **dotenv**       | Para manejar variables de entorno desde un archivo `.env`                                      |
+| **body-parser**  | Para leer el cuerpo de las peticiones (JSON, etc.) – *opcional en versiones nuevas de Express* |
+| **multer**       | Para manejar cargas de archivos (ej. fotos)                                                    |
+| **stripe**       | SDK para crear pagos con Stripe                                                                |
+| **validator**    | Validar correos, contraseñas, URLs, etc.                                                       |
+| **nodemon**      | Reinicia el servidor automáticamente al guardar cambios (solo para desarrollo)                 |
+
+
+------------------------------------------------------------------------
+La diferencia entre "=" y "+=" es que "=" asigna un valor directamente a una variable,
+mientras que "+=" suma un valor a la variable existente y luego asigna el resultado a la misma variable.
+Por ejemplo:
+x = 5; // Asigna el valor 5 a x
+x += 3; // Suma 3 al valor actual de x (5) y asigna el resultado (8) a x
+El operador "-=" en JavaScript (y en otros lenguajes de programación) se utiliza para restar un valor a una variable existente
+y luego asignar el resultado a esa misma variable. Es una forma abreviada de escribir la operación de resta y asignación.
+-----------------------------------------------------------------------------
+El operador `!` en una condición de `if` en JavaScript (y en muchos otros lenguajes)
+ se llama **operador de negación lógica** o **NOT lógico**. Su propósito es invertir el valor booleano de una expresión.
+- Si la expresión es `true`, el operador `!` la convierte en `false`.
+- Si la expresión es `false`, el operador `!` la convierte en `true`.
+ejemplo:
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+    console.log("El usuario no está conectado.");
+}
+- La variable `isLoggedIn` tiene el valor `false`.
+- La condición `!isLoggedIn` evalúa a `true` porque `!` invierte el valor de `false`.
+- Por lo tanto, el bloque dentro del `if` se ejecuta.
+Doble negación (`!!`):
+!! en el código. Esto convierte un valor en su equivalente booleano:
+let value = "texto";
+console.log(!!value); // true (porque "texto" es un valor truthy)
+
+
+
