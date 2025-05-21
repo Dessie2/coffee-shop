@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Archivos de entorno y configuración personal
+.env
+.env.*.local
+*.local
+*.secret
+*.key
+*.pem

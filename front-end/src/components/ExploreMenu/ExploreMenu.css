@@ -77,7 +77,7 @@
 /* Items del menú responsivos */
 .explore-menu-list-item {
     flex: 0 0 auto;
-    width: 150px;
+    width: 160px;
     text-align: center;
     transition: transform 0.3s;
 }
