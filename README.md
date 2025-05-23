@@ -1,6 +1,6 @@
 ☕Coffee-Shop – Aplicación Full Stack de una cafeteria.
 
-ver proyecto: 
+ver proyecto: https://precious-begonia-f30aa1.netlify.app
 
 ¡Bienvenido a Coffee-Shop!  Una aplicación web de un modelo de una cafeteria construida con el stack MERN (MongoDB, Express.js, React.js, Node.js) e integrada con Stripe para pagos seguros. Este proyecto es Ideal para aprender desarrollo web completo.
 
